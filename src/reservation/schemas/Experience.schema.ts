@@ -1,6 +1,5 @@
 import * as mongoose from 'mongoose'
 
-
 export const ExperienceSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -12,12 +11,11 @@ export const ExperienceSchema = new mongoose.Schema({
         required: true,
     },
     long_description: {
-        type: String,
-        
+        type: String,        
     },
     images: [{
         type: String,
-            }],
+    }],
     PartnersId:[{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'partner'

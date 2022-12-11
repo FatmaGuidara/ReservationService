@@ -1,10 +1,11 @@
 import * as mongoose from 'mongoose'
 
 export interface Experience{
-    name: String,
-    short_description: String,
-    long_description: String,
-    images: String[],
-    PartnersId: mongoose.Schema.Types.ObjectId[],
-    activities: String[]
+    id?: string;
+    name: string;
+    short_description: string;
+    long_description: string;
+    images: string[];
+    PartnersId: mongoose.Schema.Types.ObjectId[];
+    activities: string[];
 }

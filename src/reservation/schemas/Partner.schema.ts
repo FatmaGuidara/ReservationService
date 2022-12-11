@@ -38,6 +38,6 @@ export const PartnerSchema = new mongoose.Schema({
     },
     ExperiencesId:[{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'partner'
+        ref: 'experience'
     }]
 })

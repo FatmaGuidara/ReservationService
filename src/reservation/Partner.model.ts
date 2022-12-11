@@ -1,21 +1,20 @@
 import * as mongoose from 'mongoose'
 
 export interface Partner{
-    name: String,
-    logo: String,
-    insta: String,
-    facebook: String, 
+    id?: string;
+    name: string;
+    logo: string;
+    insta: string;
+    facebook: string;
     contact: {
-        name: String,
-        phone: Number,
-    },
+        name: string,
+        phone: number,
+    };
     disponibilites : [{
-        state: String,
+        state: string,
         date: Date
-    }], 
-    notice_reservation: Number,
-    notice_cancel: Number,
-    ExperiencesId:[{
-        type: mongoose.Schema.Types.ObjectId,
-    }]
+    }]; 
+    notice_reservation: number;
+    notice_cancel: number;
+    ExperiencesId: mongoose.Schema.Types.ObjectId[];
 }
